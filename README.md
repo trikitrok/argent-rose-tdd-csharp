@@ -12,4 +12,4 @@ No mutants
 
 ## Mutation testing
 
-`dotnet stryker --open-report`
+`dotnet stryker && google-chrome "$(ls -td StrykerOutput/*/ | head -1)reports/mutation-report.html"`
