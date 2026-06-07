@@ -1,8 +1,7 @@
+using System;
 using ArgentRose.QualityUpdatePolicies;
 
 namespace ArgentRose;
-
-using System;
 
 public static class QualityUpdatePolicyFactory
 {

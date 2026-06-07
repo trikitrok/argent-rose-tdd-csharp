@@ -1,20 +1,19 @@
-namespace ArgentRose.Tests
+using NUnit.Framework;
+
+namespace ArgentRose.Tests;
+
+[TestFixture]
+public class QualityTest
 {
-    using NUnit.Framework;
-
-    [TestFixture]
-    public class QualityTest
+    [Test]
+    [Description("equality")]
+    public void Equality()
     {
-        [Test]
-        [Description("equality")]
-        public void Equality()
-        {
-            Assert.That(QualityOf(8), Is.Not.EqualTo(QualityOf(30)));
-        }
+        Assert.That(QualityOf(8), Is.Not.EqualTo(QualityOf(30)));
+    }
 
-        private static Quality QualityOf(int value)
-        {
-            return new Quality(value);
-        }
+    private static Quality QualityOf(int value)
+    {
+        return new Quality(value);
     }
 }

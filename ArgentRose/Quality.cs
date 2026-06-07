@@ -2,14 +2,12 @@ using System;
 
 namespace ArgentRose;
 
-using System;
-
 public class Quality
 {
-    private readonly int _quality;
     private const int MinQuality = 0;
     private const int MaxQuality = 50;
-    
+    private readonly int _quality;
+
     public Quality(int quality)
     {
         _quality = quality;
